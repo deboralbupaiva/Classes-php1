@@ -25,4 +25,20 @@ $cli ->idade = 17;
 $cli ->endereco = "Rua A, 132";
 $cli ->telefone = "(41)XXXXX-XXXX";
 $cli ->comprar();
+echo "<br>";
 
+$nomeClasse = "Produto";
+$instancia = new $nomeClasse;
+var_dump($instancia);
+echo "<br>";
+
+$cli2 = new $cli;
+$nomeClasse2 = get_Class($cli);
+$cli3 = new $nomeClasse2;
+$cli3 ->nome = "LadyBug";
+var_dump($cli);
+echo "<br>";
+var_dump($cli2);
+echo "<br>";
+var_dump($cli3);
+echo "<br>";
